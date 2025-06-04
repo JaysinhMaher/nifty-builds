@@ -26,13 +26,14 @@
     <body>
         <!-- Navigation 8 -->
         <nav class="pt-30 pb-30 bg-light lh-40 text-center navigation_8 fade">
-            <div class="container px-xl-0">
-                <div class="row align-items-center">
+            <div class="container px-xl-0 position-relative">
+                <!-- Desktop Navbar (unchanged) -->
+                <div class="row align-items-center d-none d-md-flex">
                     <div class="col-lg-3 text-lg-left">
                         <img src="i/logo_1.png" alt="" class="img-fluid fade" width="200"/>
                     </div>
                     <div class="col-lg-3 col-md-12 sticky=l">
-                        <a href = "index.html" class="link logo color-main pr-125">Nifty Build's</a>
+                        <a href="index.html" class="link logo color-main pr-125">Nifty Build's</a>
                     </div>
                     <div class="col-lg-1 col-md-12">
                         <a href="index.html" class="link mr-15 color-main">Home</a>
@@ -43,6 +44,25 @@
                     <div class="col-lg-2 col-md-12">
                         <a href="contact.html" class="link mx-15 color-main">Contact Us</a>
                     </div>
+                </div>
+                <!-- Mobile Navbar -->
+                <div class="d-flex d-md-none align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <img src="i/logo_1.png" alt="" class="img-fluid fade" width="140"/>
+                        <a href="index.html" class="link logo color-main pl-2" style="font-size:1.2rem;">Nifty Build's</a>
+                    </div>
+                    <button class="navbar-toggler border-0 bg-transparent" type="button" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="width:28px;height:28px;display:inline-block;">
+                            <span style="display:block;width:100%;height:4px;background:#2e2e2e;margin-bottom:5px;border-radius:2px;"></span>
+                            <span style="display:block;width:100%;height:4px;background:#2e2e2e;margin-bottom:5px;border-radius:2px;"></span>
+                            <span style="display:block;width:100%;height:4px;background:#2e2e2e;border-radius:2px;"></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="mobile-nav d-md-none" style="display:none;">
+                    <a href="index.html" class="d-block py-2 link color-main">Home</a>
+                    <a href="services.html" class="d-block py-2 link color-main">Services</a>
+                    <a href="contact.html" class="d-block py-2 link color-main">Contact Us</a>
                 </div>
             </div>
         </nav>
@@ -141,7 +161,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-10 text-center">
                         <h2 class="mb-25 small fade">Choose from a variety of parts</h2>
-                        <div class="mb-60 f-22 color-heading text-adaptive description fade">Whether your looking for a budget setup or a top of the range PC, we've got you covered
+                        <div class="mb-60 f-22 color-heading text-adaptive description fade">Whether your looking for a budget setup or a top of the range PC, we've got you covered.
                         </div>
                     </div>
                 </div>

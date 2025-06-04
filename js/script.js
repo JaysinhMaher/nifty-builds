@@ -81,5 +81,28 @@ typewriter.typeString("Professional ")
     .deleteAll()
     .start();
 
-
-
+// Responsive Navbar Toggle
+document.addEventListener('DOMContentLoaded', function() {
+  var toggler = document.querySelector('.navbar-toggler');
+  var mobileNav = document.querySelector('.mobile-nav');
+  if (toggler && mobileNav) {
+    toggler.addEventListener('click', function() {
+      if (mobileNav.style.display === 'block') {
+        mobileNav.style.display = 'none';
+        mobileNav.classList.remove('animated-open');
+      } else {
+        mobileNav.style.display = 'block';
+        // Trigger reflow to restart animation
+        void mobileNav.offsetWidth;
+        mobileNav.classList.add('animated-open');
+      }
+    });
+    // Optional: Hide menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!toggler.contains(e.target) && !mobileNav.contains(e.target)) {
+        mobileNav.style.display = 'none';
+        mobileNav.classList.remove('animated-open');
+      }
+    });
+  }
+});
